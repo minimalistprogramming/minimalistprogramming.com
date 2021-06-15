@@ -18,24 +18,49 @@ p {
 }
 
 header {
-  background-color: #333;
   display: flex;
-  flex-direction: column;
+  padding: 40px 10% 40px 10%;
+  justify-content: space-between;
 }
 
 header .title {
-  flex: 1;
-  color: #F9F9F9;
-  text-align: center;
+  color: #333;
+  font-size: 0.8em;
+  text-align: left;
 }
+
+header .menu {
+}
+
+header .menu ul {
+  list-style: none;
+}
+
+header .menu ul li {
+  display: inline;
+  margin-right: 30px;
+}
+
+header .menu ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+
+header .menu ul li a:hover {
+  color: #FE9819;
+}
+
+
 
 header .sub-title {
   flex: 1;
-  background-color: #555;
   text-align: center;
   font-size: 1.0em;
   color: #CCC;
 }
+
+
 
 .prog {
   color: #FE9819;
@@ -100,7 +125,7 @@ header .sub-title {
 }
 
 .courses H3 {
-  font-size: 2em;
+  font-size: 1.3em;
 }
 
 .course {
@@ -123,7 +148,7 @@ header .sub-title {
 }
 
 .course .title {
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: 700; 
   text-align: left;
   margin-bottom: 20px;
