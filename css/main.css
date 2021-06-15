@@ -1,0 +1,250 @@
+
+
+html, body {
+  margin: 0;
+  background-color: #white;
+  font-size: medium;
+  font-family: Inconsolata;
+  color: #000;
+  height: 100%;
+}
+
+p {
+  color: #333;
+  line-height:1.5em;
+  font-size: 20px; 
+  font-weight: 100; 
+  line-height: 30px;
+}
+
+header {
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+}
+
+header .title {
+  flex: 1;
+  color: #F9F9F9;
+  text-align: center;
+}
+
+header .sub-title {
+  flex: 1;
+  background-color: #555;
+  text-align: center;
+  font-size: 1.0em;
+  color: #CCC;
+}
+
+.prog {
+  color: #FE9819;
+}
+
+.article {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  padding-left: 8%;
+  padding-right: 8%;
+  font-style: normal; 
+  font-style: normal; 
+}
+
+.article .header {
+  text-align: center;
+}
+
+.article .break {
+  width: 50px;
+  border-bottom: 10px dotted #FFC400;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.article h2 {
+  color: #333;
+  font-size: 1.5em;
+  font-size: 60px; 
+  font-variant: all-petite-caps; 
+  font-weight: 700; 
+  line-height: 40px;
+}
+
+.article h3 {
+  font-size: 30px; 
+  font-style: normal; 
+  font-weight: 700; 
+  margin-top: 90px;
+}
+
+.article .body {
+  padding-top: 20px;
+  color: #333;
+  line-height:1.5em;
+  font-size: 20px; 
+  font-weight: 100; 
+  line-height: 30px;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+
+.courses {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.courses H3 {
+  font-size: 2em;
+}
+
+.course {
+  margin-bottom: 50px;
+  border-left: 5px solid #FE9819;
+}
+
+.course .content {
+  background-color: #F9F9F9;
+  margin-left: 20px;
+  padding: 20px;
+  border: 1px solid #F2F2F2;
+  color: #555;
+  transition-property: background-color;
+  transition-duration: 0.8s;
+}
+
+.course .content:hover {
+  background-color: #f7bf7b;
+}
+
+.course .title {
+  font-size: 1.5em;
+  font-weight: 700; 
+  text-align: left;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.course .badgets {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 15px;
+}
+
+
+.course .badgets .badget {
+  align-items: flex-start;
+  padding: 2px 10px 5px 10px;
+  font-family: arial;
+  font-size: 15px;
+  font-weight: bold;
+  font-variant: all-petite-caps;
+  border-radius: 10px;
+  margin-right: 10px;
+  color: white;
+}
+
+.course .badgets .free {
+  background-color: #F7C744;
+}
+
+.course .badgets .beginners {
+  background-color: #905949;
+}
+
+.course .badgets .advanced {
+  background-color: #21394c;
+}
+
+
+.course-landing-page-background {
+  background:url('connections.jpg');
+}
+
+.course-landing-page-header {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to right, rgba(254,152,25, 1), 50%, rgba(254,152,25,.7));
+  height: 500px;
+  border-bottom: 60px solid #ed8f1c;
+}
+
+.course-landing-page-header-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  flex-basis: 80%;
+  height: 80%;
+  margin: auto;
+}
+
+.course-landing-page-header-title {
+  color: white;
+  text-shadow: 1px 1px #bc7012;
+  font-size: 3.5em;
+  font-weight: 700;
+  text-align: left;
+}
+
+.course-landing-page-header-legend {
+  color: #6d4008;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-align: left;
+}
+
+
+/* DESKTOP */
+@media only screen and (min-width: 768px) {
+
+    .course-landing-page-header-group {
+      flex-direction: row;
+    }
+
+    .course-landing-page-header-title {
+      margin-right: 80px;
+      font-size: 5.0em;
+    }
+
+    .course-landing-page-header-legend {
+      font-size: 2.0em;
+    }
+}
+
+
+/* BIG SCREEN */
+@media only screen and (min-width: 2000px) {
+
+    .course-landing-page-header-title {
+      font-size: 7.0em;
+    }
+
+    .course-landing-page-header-legend {
+      font-size: 3.0em;
+    }
+}
+
+.why {
+  padding: 10%;
+}
+
+.why h3 {
+  color: black;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.footer {
+  flex-shrink: 0;
+  background-color:#333;
+  padding: 20px;
+  color: #CCC;
+  text-align: center;
+  margin-top: 100px;
+}
